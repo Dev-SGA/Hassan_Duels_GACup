@@ -491,16 +491,6 @@ with col_bottom_right:
 
     st.divider()
 
-    # ── Final Third Duels ──
-    st.markdown("**Final Third Duels**")
-    f1, f2, f3, f4 = st.columns(4)
-    f1.metric("Total", stats["final_third_total"])
-    f2.metric("Won", stats["final_third_wins"])
-    f3.metric("Lost", stats["final_third_lost"])
-    f4.metric("Success %", f"{stats['final_third_rate']:.1f}%")
-
-    st.divider()
-
     # ── Touches ──
     st.markdown("**Touches**")
     t1, t2 = st.columns(2)
