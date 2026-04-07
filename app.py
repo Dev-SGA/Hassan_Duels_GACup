@@ -14,7 +14,7 @@ from matplotlib.patches import FancyArrowPatch
 # ==========================
 st.set_page_config(layout="wide", page_title="Duel Map Analysis")
 
-st.title("Offensive Duel Map Analysis - Multiple Matches")
+st.title("1v1 Map Analysis - Multiple Matches")
 st.caption("Click on the icons on the pitch to inspect the corresponding event.")
 
 # ==========================
