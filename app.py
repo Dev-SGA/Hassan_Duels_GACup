@@ -12,7 +12,7 @@ from matplotlib.patches import FancyArrowPatch
 # ==========================
 # Page Configuration
 # ==========================
-st.set_page_config(layout="wide", page_title="Duel Map Analysis")
+st.set_page_config(layout="wide", page_title="1v1 Map Analysis")
 
 st.title("1v1 Map Analysis - Multiple Matches")
 st.caption("Click on the icons on the pitch to inspect the corresponding event.")
@@ -22,23 +22,23 @@ st.caption("Click on the icons on the pitch to inspect the corresponding event."
 # ==========================
 duel_matches_data = {
     "Vs Connecticut": [
-        ("OFFENSIVE DUEL WON", 109.70, 29.36, "videos/D1 - CT.mp4"),
-        ("OFFENSIVE DUEL LOST", 111.20, 12.74, "videos/D2 - CT.mp4"),
+        ("OFFENSIVE DUEL WON", 109.70, 29.36, "videos/1 - CN (S).mp4"),
+        ("OFFENSIVE DUEL LOST", 111.20, 12.74, "videos/2 - SN (F).mp4"),
     ],
     "Vs Nashville": [
-        ("OFFENSIVE DUEL WON", 110.04, 14.90, "videos/D1 - NS.mp4"),
+        ("OFFENSIVE DUEL WON", 110.04, 14.90, "videos/1 - NS (S).mp4"),
     ],
     "Vs Seongnam": [
-        ("OFFENSIVE DUEL WON", 89.42, 3.43, "videos/D1 - SN.mp4"),
-        ("OFFENSIVE DUEL LOST", 102.72, 4.76, "videos/D2 - SN.mp4"),
-        ("OFFENSIVE DUEL LOST", 92.91, 12.07, "videos/D3 - SN.mp4"),
-        ("OFFENSIVE DUEL LOST", 110.04, 64.77, "videos/D4 - SN.mp4"),
+        ("OFFENSIVE DUEL WON", 89.42, 3.43, "videos/3 - SG (S).mp4"),
+        ("OFFENSIVE DUEL LOST", 102.72, 4.76, "videos/1 - SG (F).mp4"),
+        ("OFFENSIVE DUEL LOST", 92.91, 12.07, "videos/2 - SG (F).mp4"),
+        ("OFFENSIVE DUEL LOST", 110.04, 64.77, "videos/4 - SG (F).mp4"),
     ],
     "Vs Red Bull": [
-        ("OFFENSIVE DUEL LOST", 80.95, 20.88, "videos/D1 - RB.mp4"),
+        ("OFFENSIVE DUEL LOST", 80.95, 20.88, "videos/1 - RB (F).mp4"),
     ],
     "Vs Seattle": [
-        ("OFFENSIVE DUEL WON", 89.76, 33.52, "videos/D1 - SE.mp4"),
+        ("OFFENSIVE DUEL WON", 89.76, 33.52, "videos/1 - ST (S).mp4"),
     ],
 }
 
