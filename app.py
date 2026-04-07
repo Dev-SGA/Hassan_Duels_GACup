@@ -288,7 +288,7 @@ touch_stats = compute_touch_stats(df_touches)
 col_left, col_right = st.columns(2)
 
 with col_left:
-    st.subheader("Interactive Duel Map")
+    st.subheader("Interactive 1v1 Map")
 
     pitch_duel = Pitch(
         pitch_type="statsbomb",
