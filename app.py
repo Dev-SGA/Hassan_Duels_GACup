@@ -325,7 +325,7 @@ with col_left:
             [0], [0],
             marker="o",
             color="w",
-            label="Offensive Duel Won",
+            label="1v1 Succeeded",
             markerfacecolor=(0.10, 0.85, 0.10, 0.95),
             markersize=10,
             linestyle="None"
@@ -334,7 +334,7 @@ with col_left:
             [0], [0],
             marker="x",
             color=(0.95, 0.15, 0.15, 0.95),
-            label="Offensive Duel Lost",
+            label="1v1 Failed",
             markersize=10,
             markeredgewidth=2.5,
             linestyle="None"
@@ -489,3 +489,13 @@ with col_bottom_right:
     f2.metric("Won", stats["final_third_wins"])
     f3.metric("Lost", stats["final_third_lost"])
     f4.metric("Success %", f"{stats['final_third_rate']:.1f}%")
+
+    st.divider()
+
+    # ── Touches ──
+    st.markdown("**Touches**")
+    total_touches = len(df_touches)
+    final_third_touches = len(df_touches[df_touches["x"] > 80])
+    t1, t2 = st.columns(2)
+    t1.metric("Total Touches", total_touches)
+    t2.metric("Final Third Touches", final_third_touches)
